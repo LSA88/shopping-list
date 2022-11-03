@@ -39,6 +39,7 @@ function createItem(text) {
         </button>
       </div>
       <div class="item__divider"></div>`;
+  id++;
   return itemRow;
 }
 
