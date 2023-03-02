@@ -12,17 +12,11 @@ function createList() {
   // 입력값 받기
   let text = footer__input.value;
 
-  if (!text) {
-    alert("텍스트를 입력해주십시요.");
-    footer__input.focus();
-    return;
-  }
-
   // li(item) 생성
   const item = createItem(text);
   items.appendChild(item);
 
-  footer__input.value = "";
+  input = "";
 }
 
 let id = 0;

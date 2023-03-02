@@ -15,7 +15,6 @@ function createList() {
   if (!text) {
     alert("텍스트를 입력해주십시요.");
     footer__input.focus();
-    return;
   }
 
   // li(item) 생성

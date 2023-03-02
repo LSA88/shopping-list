@@ -12,17 +12,12 @@ function createList() {
   // 입력값 받기
   let text = footer__input.value;
 
-  if (!text) {
-    alert("텍스트를 입력해주십시요.");
-    footer__input.focus();
-    return;
-  }
-
   // li(item) 생성
   const item = createItem(text);
   items.appendChild(item);
 
-  footer__input.value = "";
+  console.log(text);
+  console.log("아이템 생성중!");
 }
 
 let id = 0;
@@ -44,10 +39,7 @@ function createItem(text) {
   return item__row;
 }
 
-items.addEventListener("click", event => {
-  let id = event.target.dataset.id;
-  if (id) {
-    let del_item = document.querySelector(`.item__row[data-id="${id}"]`);
-    del_item.remove();
-  }
+const item__delete = document.querySelector(".item__delete");
+item__delete.addEventListener("click", event => {
+  console.log("click");
 });
